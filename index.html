@@ -6,10 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Adar Fitness · סטודיו לאימונים פונקציונליים</title>
+    <title>Adar Fitness · סטודיו לאימונים פונקציונליים בכוכב יאיר</title>
     <meta
       name="description"
-      content="סטודיו אדר פיטנס לאימונים פונקציונליים. אימונים שבונים כוח, גמישות וביטחון לתנועה של כל יום, בקצב שמתאים לך. לכל גיל ולכל רמה. לשיחת היכרות בוואטסאפ."
+      content="סטודיו אדר פיטנס בכוכב יאיר: אימונים פונקציונליים לכל גיל ולכל רמה, עם התמחות באימוני נערות. קבוצות קטנות של עד 8 מתאמנים, קרוב לצור יגאל וכפר סבא."
     />
     <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://adarfitness.github.io/" />
@@ -19,11 +19,11 @@
     <meta property="og:url" content="https://adarfitness.github.io/" />
     <meta
       property="og:title"
-      content="Adar Fitness · סטודיו לאימונים פונקציונליים"
+      content="Adar Fitness · סטודיו לאימונים פונקציונליים בכוכב יאיר"
     />
     <meta
       property="og:description"
-      content="אימונים פונקציונליים שבונים כוח, גמישות וביטחון, בקצב שמתאים לך ובאווירה משפחתית."
+      content="אימונים פונקציונליים בכוכב יאיר, עם התמחות באימוני נערות. קבוצות קטנות של עד 8 מתאמנים, לכל גיל ולכל רמה."
     />
     <meta
       property="og:image"
@@ -54,9 +54,10 @@
       {
         "@context": "https://schema.org",
         "@type": "ExerciseGym",
+        "@id": "https://adarfitness.github.io/#studio",
         "name": "Adar Fitness",
-        "alternateName": "אדר פיטנס",
-        "description": "סטודיו לאימונים פונקציונליים בכוכב יאיר. קבוצות קטנות של עד 8 מתאמנים, לכל גיל ולכל רמה.",
+        "alternateName": ["אדר פיטנס", "סטודיו אדר פיטנס", "Adar Fitness Studio", "AdarFitness"],
+        "description": "סטודיו לאימונים פונקציונליים בכוכב יאיר צור יגאל. אימונים בקבוצות קטנות של עד 8 מתאמנים לכל גיל ולכל רמה, אימוני נערות ואימונים אישיים.",
         "url": "https://adarfitness.github.io/",
         "image": "https://adarfitness.github.io/assets/og-image.jpg",
         "logo": "https://adarfitness.github.io/assets/logo.png",
@@ -65,6 +66,7 @@
           "@type": "PostalAddress",
           "streetAddress": "דרך המרכז 4",
           "addressLocality": "כוכב יאיר",
+          "addressRegion": "מחוז המרכז",
           "addressCountry": "IL"
         },
         "geo": {
@@ -73,9 +75,52 @@
           "longitude": 34.9987004
         },
         "hasMap": "https://maps.google.com/?cid=16200941128904096296",
-        "sameAs": [
-          "https://www.instagram.com/adarfitness"
-        ]
+        "areaServed": [
+          { "@type": "City", "name": "כוכב יאיר" },
+          { "@type": "City", "name": "צור יגאל" },
+          { "@type": "City", "name": "צור יצחק" },
+          { "@type": "City", "name": "צור נתן" },
+          { "@type": "City", "name": "כפר סבא" },
+          {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": 32.2230281,
+              "longitude": 34.9987004
+            },
+            "geoRadius": "20000"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "אימונים בסטודיו",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "אימונים פונקציונליים בקבוצות קטנות"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "אימוני נערות",
+                "description": "אימוני כושר לנערות מכיתה ו׳ ועד י״ב ולצעירות אחרי צבא, בכוכב יאיר.",
+                "audience": {
+                  "@type": "PeopleAudience",
+                  "suggestedGender": "female"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": { "@type": "Service", "name": "אימונים אישיים" }
+            }
+          ]
+        },
+        "sameAs": ["https://www.instagram.com/adarfitness"]
       }
     </script>
   </head>
@@ -153,13 +198,15 @@
           width="1536"
           height="1024"
           fetchpriority="high"
-          alt="אדר בעמידת ידיים בסטודיו אדר פיטנס"
+          alt="אדר בעמידת ידיים בסטודיו אדר פיטנס בכוכב יאיר"
         />
         <div class="hero-copy">
           <!-- <p class="hero-lead">ADAR FITNESS · סטודיו לאימונים פונקציונליים</p> -->
           <h1 id="hero-title" class="display">
             <span class="hero-brand">ADAR <em>FITNESS</em></span>
-            <span class="hero-sub">סטודיו לאימונים פונקציונליים</span>
+            <span class="hero-sub"
+              >סטודיו לאימונים פונקציונליים בכוכב יאיר</span
+            >
           </h1>
           <p class="hero-lead">
             אימונים שבונים כוח, גמישות וביטחון לתנועה של כל יום. בקצב שמתאים לך,
@@ -262,7 +309,8 @@
             </h2>
             <p>
               שמי אדר ואני חיה ונושמת ספורט מאז שאני זוכרת את עצמי. לפני עשור
-              לקחתי את האהבה הזו צעד קדימה והקמתי את סטודיו אדר פיטנס.
+              לקחתי את האהבה הזו צעד קדימה והקמתי את סטודיו אדר פיטנס בכוכב
+              יאיר.
             </p>
             <p>
               האימונים בסטודיו פונקציונליים: הם משלבים עבודה על כוח, סיבולת לב
@@ -333,8 +381,8 @@
               </h2>
             </div>
             <p>
-              לא עוד מנוי לחדר כושר. סטודיו קטן ואישי, עד 8 מתאמנים בכל אימון,
-              שבו כל אימון מחזק אותך לחיים שמחוץ לו.
+              לא עוד מנוי לחדר כושר. סטודיו קטן ואישי בכוכב יאיר, עד 8 מתאמנים
+              בכל אימון, שבו כל אימון מחזק אותך לחיים שמחוץ לו.
             </p>
           </div>
           <div class="cards">
@@ -350,7 +398,7 @@
                 width="1800"
                 height="1200"
                 loading="lazy"
-                alt="אדר בסטודיו, מוקפת בציוד אימון"
+                alt="אדר בסטודיו בכוכב יאיר, מוקפת בציוד אימון"
               />
               <div class="card-feature-copy">
                 <h3>כוח · סיבולת · גמישות</h3>
@@ -496,7 +544,7 @@
               </blockquote>
               <figcaption>
                 <span class="avatar" aria-hidden="true">ע</span
-                ><span><b>עומר</b><small>מתאמן כבר שנה</small></span>
+                ><span><b>עומר</b><small>מתאמן כבר 3 שנים</small></span>
               </figcaption>
             </figure>
           </div>
@@ -540,6 +588,17 @@
             </details>
             <details>
               <summary>
+                מאיזה גיל אפשר להתאמן?<span class="faq-icon" aria-hidden="true"
+                  ><svg class="i-stroke"><use href="#i-plus" /></svg
+                ></span>
+              </summary>
+              <p>
+                בסטודיו יש אימונים לכל הגילאים. אימוני הנערות מיועדים לנערות
+                מכיתה ו׳ ועד י״ב, וגם לצעירות אחרי צבא.
+              </p>
+            </details>
+            <details>
+              <summary>
                 כמה זמן נמשך אימון?<span class="faq-icon" aria-hidden="true"
                   ><svg class="i-stroke"><use href="#i-plus" /></svg
                 ></span>
@@ -570,6 +629,10 @@
                   </span>
                   דרך המרכז 4, כוכב יאיר
                 </p>
+                <p class="location-note">
+                  ממש ליד צור יגאל, צור יצחק וצור נתן, ובמרחק נסיעה קצרה מכפר
+                  סבא.
+                </p>
                 <div class="location-actions">
                   <a
                     class="btn btn-brand btn-sm"
@@ -592,13 +655,15 @@
             </details>
             <details>
               <summary>
-                כמה מתאמנים יש בכל אימון?<span class="faq-icon" aria-hidden="true"
+                כמה מתאמנים יש בכל אימון?<span
+                  class="faq-icon"
+                  aria-hidden="true"
                   ><svg class="i-stroke"><use href="#i-plus" /></svg
                 ></span>
               </summary>
               <p>
-                עד 8 מתאמנים בכל אימון. ככה אני רואה כל תנועה ונותנת יחס אישי לכל
-                אחת ואחד.
+                עד 8 מתאמנים בכל אימון. ככה אני רואה כל תנועה ונותנת יחס אישי
+                לכל אחת ואחד.
               </p>
             </details>
             <details>
